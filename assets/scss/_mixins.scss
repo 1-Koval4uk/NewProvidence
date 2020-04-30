@@ -1,0 +1,8 @@
+@mixin regular {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin section-name {
+    color: $section-name__color;
+    @include regular;
+    font-size: 52px;
+}
