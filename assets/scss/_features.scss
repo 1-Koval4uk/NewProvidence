@@ -1,0 +1,29 @@
+.features{
+    padding: 160px 15px;
+}
+.features-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__col{
+        padding: 0 40px;;
+    }
+    &__title{
+        @include light;
+        font-size: 24px;
+        font-weight: 300;
+        margin: 25px 0;
+    }
+    &__text{
+        @include regular;
+        font-size: 18px;
+        color: $text__color;
+        line-height: 28px;
+        max-width: 476px;
+        width: 100%;
+    }
+    &__lnr{
+        font-size: 42px;
+        color: $main-button__color;
+    }
+}

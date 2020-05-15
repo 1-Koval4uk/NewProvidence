@@ -1,6 +1,9 @@
 @mixin regular {
     font-family: 'Roboto', sans-serif;
 }
+@mixin light {
+    font-family: 'Robotol';
+}
 @mixin section-name {
     color: $section-name__color;
     @include regular;

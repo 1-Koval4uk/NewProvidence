@@ -1,0 +1,50 @@
+.phones{
+    padding: 160px 15px;
+    background-color: #f4f4f5;
+    overflow: hidden;
+}
+.phones-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        @include light;
+        color: $nav-text__color;
+        font-size: 52px;
+        &::after{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            margin: 40px auto;
+            background-color: #267df4;
+        }
+    }
+    &__phones-screen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__screens-img{
+        max-width: 320px;
+        width: 100%;
+        height: 570px;
+        box-shadow: 10px 10px 16px 0px rgba(61, 61, 62, 0.15);
+        margin: 0 15px;
+    }
+    &__main{
+        max-width: 395px;
+        width: 100%;
+        height: 780px;
+        box-shadow: none;
+    }
+    span{
+        display: block;
+        @include regular;
+        font-size: 12px;
+        color: $text__color;
+        text-transform: uppercase;
+        margin: 30px 0;
+        letter-spacing: 0.5px;
+    }
+}

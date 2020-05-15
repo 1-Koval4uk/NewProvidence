@@ -1,0 +1,73 @@
+.get-app{
+    padding: 160px 15px;
+    background-color: #f4f4f5;
+}
+.get-app-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        @include light;
+        color: $nav-text__color;
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+    &__email-blck{
+        max-width: 500px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $text__color;
+        border-radius: 50px;
+        padding: 2px;
+        overflow: hidden;
+    }
+    &__inp{
+        max-width: 340px;
+        width: 100%;
+        border: none;
+        padding: 0px 10px;
+        @include regular;
+        outline: none;
+    }
+    &__btn{
+        display: block;
+        max-width: 160px;
+        width: 100%;
+        background-color: #6fc754;
+        color: white;
+        @include regular;
+        font-size: 16px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    &__app-btn{
+        background-color: #131315;
+        color: white;
+        @include regular;
+        font-size: 26px;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 28px;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+    }
+    span{
+        display: block;
+        @include regular;
+        font-size: 12px;
+        color: $text__color;
+        text-transform: uppercase;
+        margin-top: 40px;
+        letter-spacing: 0.5px;
+    }
+}

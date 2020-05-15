@@ -1,0 +1,72 @@
+.protected{
+    padding: 160px 15px;
+}
+.protected-row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 140px;
+    &__iphone{
+        max-width: 930px;
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        z-index: -1;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        max-width: 460px;
+        width: 100%;
+    }
+    &__title{
+        @include light;
+        font-size: 52px;
+        color: $nav-text__color;
+        margin: 25px 0 50px 0;
+    }
+    &__text{
+        @include regular;
+        font-size: 18px;
+        color: $text__color;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    &__btns{
+        display: flex;
+        margin-top: 20px;
+    }
+    &__hack{
+        background-color: $main-button__color;
+        @include regular;
+        border-radius: 30px;
+        color: white;
+        max-width: 165px;
+        width: 100%;
+        height: 34px;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+        transition: 0.2s;
+        &:hover{
+            color: #00fffb;;
+        }
+    }
+    &__more{
+        @include regular;
+        color: #26272d;
+        background-color: transparent;
+        border: 1px solid #26272d;
+        border-radius: 100px;
+        max-width: 110px;
+        width: 100%;
+        height: 34px;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover{
+            background-color: $nav-text__color;
+            color: white;
+            border-color: $nav-text__color;
+        }
+    }
+}
