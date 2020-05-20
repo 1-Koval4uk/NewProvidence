@@ -33,3 +33,11 @@ $(window).on('scroll', function(){
 $('.btn-top').click(function(){
     $('html, body').animate({scrollTop:0}, 800)
 })
+
+
+$('.testimonials-row__slider').slick({
+    dots: true,
+    autoplay: true,
+    speed: 900,
+    autoplaySpeed: 7500,
+});

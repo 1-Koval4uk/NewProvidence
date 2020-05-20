@@ -1,0 +1,48 @@
+.testimonials{
+    padding: 160px 0;
+}
+.testimonials-row{
+    &__slider{
+        position: relative;
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    &__slide{
+
+    }
+    &__slide-title{
+        @include light;
+        font-size: 28px;
+        font-weight: 300;
+        max-width: 555px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    &__slide-text{
+        @include light;
+        font-size: 18px;
+        color: #8c8f94;
+        max-width: 549px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    &__rating{
+        margin-bottom: 50px;
+        .fa-star{
+            font-size: 22px;
+            color: #8c8f94;
+        }
+        .gold-star{
+            color: #f2bc3b;
+        }
+    }
+    span{
+        display: block;
+        @include regular;
+        font-size: 12px;
+        color: #26272d;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
